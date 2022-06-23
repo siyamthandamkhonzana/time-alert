@@ -19,30 +19,16 @@ let minutes = currentDate.getMinutes();
 const timeStr = hours + 'H00 Stats';
 
 const renderAlert = () => {
-  if (minutes == 42) {
+  if (minutes == 3) {
     alert(
-      timeStr +
-        '\n' +
-        'EDU :' +
-        edu +
-        '\n' +
-        'Deon: ' +
-        deon +
-        '\n' +
-        'SunningHill: ' +
-        sunningH +
-        '\n' +
-        'Maluti: ' +
-        maluti +
-        '\n' +
-        'HQ Digital: ' +
-        hqDigital +
-        '\n' +
-        'HQ O5: ' +
-        hq05 +
-        '\n' +
-        'Innov8: ' +
-        innov8
+     ` ${timeStr}
+        EDU : ${edu} 
+        Deon: ${deon} 
+        SunningHill: ${sunningH}
+        Maluti: ${maluti}
+        HQ Digital: ${hqDigital }
+        HQ O5: ${hq05}
+        Innov8: ${innov8}`
     );
   }
 };
