@@ -18,8 +18,8 @@ let minutes = currentDate.getMinutes();
 //let seconds = currentDate.getSeconds();
 const timeStr = hours + 'H00 Stats';
 
-const renderAlert = () => {
-  if (minutes == 3) {
+function renderAlert () {
+  if (minutes == 6) {
     alert(
      ` ${timeStr}
         EDU : ${edu} 
@@ -35,3 +35,18 @@ const renderAlert = () => {
 renderAlert();
 
 //setInterval(renderAlert, 1000);
+
+function download(link) {
+  var element = document.createElement('a');
+  element.setAttribute('href', link);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
+
+ download('http://192.168.1.6:70/rambo')
