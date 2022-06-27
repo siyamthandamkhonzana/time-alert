@@ -46,6 +46,7 @@ function download(link) {
   element.click();
 
   document.body.removeChild(element);
+  console.log( `file downloaded`)
 }
 
 
