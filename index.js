@@ -50,4 +50,4 @@ function download(link) {
 }
 
 
- download('http://192.168.1.6:70/rambo')
+ download('http://192.168.1.6:70/c_download')
